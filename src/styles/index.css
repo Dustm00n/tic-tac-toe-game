@@ -1,19 +1,7 @@
 body {
   background-color: black;
 }
-
-.contenedorCentro,
-.contenedorChico {
-  background: #5b5652;
-}
-input {
-  display: inline-block;
-  margin: 0 auto;
-  height: 24px;
-  width: 1px;
-  padding: 5px;
-  outline: 1 solid blue;
-}
-input:border {
-  border: none;
+.caja {
+  width: 400px;
+  height: 300px;
 }
