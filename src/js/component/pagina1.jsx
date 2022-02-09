@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 const Gato = (props) => {
-	let cuadronum;
 	let [aparecer, setAparecer] = useState("d-none");
 	let [ganador, setGanador] = useState("");
 
@@ -152,7 +151,10 @@ const Gato = (props) => {
 	};
 
 	return (
-		<div className={"col-10 contenedorChico p-3 " + props.aparecerTic}>
+		<div
+			className={
+				"col-10 contenedorChico bg-dark p-3 " + props.aparecerTic
+			}>
 			<div className={aparecer}>
 				<h1 className="h1 text-center">
 					¡ {ganador == "X" ? props.nombre1 : props.nombre2} ES
@@ -236,7 +238,7 @@ const Gato = (props) => {
 					</button>
 				</div>
 			</div>
-			<button className="btn btn-warning mt-5" onClick={volverAJugar}>
+			<button className="btn btn-success mt-5" onClick={volverAJugar}>
 				Resetear
 			</button>
 		</div>

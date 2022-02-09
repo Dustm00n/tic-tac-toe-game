@@ -49,11 +49,11 @@ export function Home() {
 	};
 
 	return (
-		<div className="container">
-			<div className="container text-white mt-1 ">
+		<div className="container bg-dark">
+			<div className="container text-white mt-1 bg-dark">
 				<div className="row justify-content-center text-center">
 					<div className="col-8 contenedorCentro mt-2 mb-5 p-2">
-						<h1>TicTacToe in React.js</h1>
+						<h1>Gato the rial shiet in React.js</h1>
 						<h2>Es turno de {turno}</h2>
 						<div className="row justify-content-center">
 							<div
@@ -66,42 +66,44 @@ export function Home() {
 									<input
 										placeholder="Jugador 1"
 										type="text"
-										className="col-4 mr-2 form-control"
+										className="col-4 form-control"
 										id="nombre1"></input>
 									<input
 										type="text"
 										placeholder="Jugador 2"
-										className="col-4 ml-2 form-control"
+										className="col-4 form-control"
 										id="nombre2"></input>
 								</div>
 
 								<p className="my-3 h4">¿Quien empieza?</p>
-								<button
-									className="btnTicTac ml-3 mr-2 mb-3 text-warning"
-									id="btnLogin1"
-									onClick={() => {
-										{
-											asignarTurno("X");
-											desaparecerLogin();
-											aparecerTicTack();
-											tomarNombres();
-										}
-									}}>
-									X
-								</button>
-								<button
-									className="btnTicTac m my-3 text-primary"
-									id="btnLogin2"
-									onClick={() => {
-										{
-											asignarTurno("O");
-											desaparecerLogin();
-											aparecerTicTack();
-											tomarNombres();
-										}
-									}}>
-									O
-								</button>
+								<div className="Grupo-b">
+									<button
+										className="btnTicTac ml-3 mr-2 mb-3 text-danger"
+										id="btnLogin1"
+										onClick={() => {
+											{
+												asignarTurno("X");
+												desaparecerLogin();
+												aparecerTicTack();
+												tomarNombres();
+											}
+										}}>
+										X
+									</button>
+									<button
+										className="btnTicTac m my-3 text-success"
+										id="btnLogin2"
+										onClick={() => {
+											{
+												asignarTurno("O");
+												desaparecerLogin();
+												aparecerTicTack();
+												tomarNombres();
+											}
+										}}>
+										O
+									</button>
+								</div>
 							</div>
 							<Gato
 								setDesaparecer={setDesaparecer}
